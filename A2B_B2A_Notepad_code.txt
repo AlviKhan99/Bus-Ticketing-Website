@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Company X | Bus Service Details</title>
+    <link rel="stylesheet" href="E:\Prog. Stuff\HTML and CSS works\First_test_website\Styles.css" />
+    <script src="service.js" async></script>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="E:\Prog. Stuff\HTML and CSS works\First_test_website\Home.html" target="_blank">Home</a></li>
+                <li><a href="E:\Prog. Stuff\HTML and CSS works\First_test_website\About.html" target="_blank">About</a></li>
+                <li><a href="E:\Prog. Stuff\HTML and CSS works\First_test_website\Get_started.html" target="_blank">Get Started</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="company-name company-name-large:">Company X</h1>
+    </header>
+    <section class="main-section">
+        <!--Location,price,add to cart-->
+        <div>
+            <ul>
+                <li class="details-text"><strong>Estimated time to reach destination is 10 minutes.</strong></li>
+
+                <li class="details-text"><a href="https://maps.google.com" target="_blank"><strong>Click here to see current location of the bus.</strong></a></li>
+
+                <li class="details-text"><strong>The price of this bus journey is RM 2.0.</strong></li>
+
+
+            </ul>
+
+        </div>
+
+        <div>
+            <span class="details-text">Bus Ticket Price:</span>
+            <span class="price-text">RM2.0</span>
+            <br />
+            <span><button type="button" class="btn btn-add-to-cart">Add to Cart</button></span>
+        </div>
+        
+        <div class="cart-items">
+            <h2 class="cart-header">Cart</h2>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <strong class="cart-item-text">Unit Ticket Price:</strong>
+                    <strong class="cart-price cart-column">RM2.0</strong>
+                    <br />
+                    <div>
+                        <strong class="cart-item-text">Number of Tickets:</strong>
+                        <span class="cart-quantity cart-column">
+                            <strong><input class="cart-quantity-input" type="number" value="1" /></strong>
+                            <button role="button" class="btn btn-danger">Remove</button>
+                        </span>
+                    </div>
+                    
+                </div>
+          
+            </div>
+        </div>
+        
+
+        <div class="cart-total">
+            <strong class="cart-total-title">Total:</strong>
+            <strong class="cart-total-price">RM2.0</strong>
+        </div>
+        <div>
+            <button role="button" class="btn btn-primary btn-purchase">Purchase</button>
+        </div>
+
+
+
+
+    </section>
+    
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="company-name-small">Company X</h3>
+            <ul class="nav footer-nav">
+                <li><a href="E:\Prog. Stuff\HTML and CSS works\First_test_website\Contact.html" target="_blank"><img src="E:\Prog. Stuff\HTML and CSS works\First_test_website\Images\contact_number_logo.png" width="40" height="40" /></a></li>
+
+                <li><a href="https://facebook.com" target="_blank"><img src="E:\Prog. Stuff\HTML and CSS works\First_test_website\Images\facebook_logo.png" width="40" height="40" /></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+﻿*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-image: url("Images/Website_Background.png");
+    padding: 30px;
+    background-size: cover;
+}
+
+.nav ul{
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 3.0em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .95)
+}
+
+    .main-nav li {
+        padding: 0 5%;
+    }
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.company-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-weight: normal;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, .95)
+}
+
+.main-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-weight: normal;
+    text-align: left;
+    font-size: 2.5em;
+}
+
+.company-name-small {
+    text-align: left;
+    margin: 0;
+    font-size: 4.25em;
+    font-weight: normal;
+    color: white;
+}
+.main-footer-container {
+    border-top: 2px solid rgba(255, 255, 255, .95);
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 60px;
+    height: 60px;
+}
+
+/*Home Section Works:*/
+.about-company-logo-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.home-header {
+    font-weight: bold;
+    text-align: center;
+    font-size: 4.0em;
+}
+
+.home-text {
+    text-align: left;
+    font-size: 2em;
+    padding-left: 1em;
+    text-shadow: #a59f9f00
+}
+
+.home-news-header {
+    font-weight: bold;
+    text-align: left;
+    font-size: 4.0em;
+    padding-bottom: 0.2em;
+}
+
+.home-section-nav li {
+    padding: 0.8em;
+
+}
+
+.home-section-nav ul {
+    margin: 0;
+}
+
+.home-section-nav a {
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.home-section-nav {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: lighter;
+  
+}
+
+    .main-nav li {
+        padding: 0 5%;
+    }
+
+.home-section-nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+/*Home Section Works Done.*/
+
+/*Contact Section Works:*/
+.contact-section-header {
+    font-weight: normal;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.contact-text {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.contact-important-text:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+/*Contact Section Works Done.*/
+
+/*Get Started Section Works:*/
+.get-started-section-header {
+    font-weight: normal;
+    text-align: left;
+    font-size: 2.0em;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.item-row {
+    border-bottom: 2px solid #ffffff7c;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.item-row:last-child {
+    border: none;
+}
+/*Get Started Section Works Done.*/
+
+/*Bus Service Details Section Works:*/
+.details-text {
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.details-text a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.btn-add-to-cart {
+    color: white;
+    border: none;
+    background-color: #56CCF2;
+    border-radius: 0;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.btn-add-to-cart:hover{
+    background-color: #2D9CDB;
+}
+
+.cart-header {
+    font-weight: normal;
+    text-align: left;
+    font-size: 4em;
+    padding-left: 1em;
+}
+
+.price-text {
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.cart-total-price {
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #d80a0a;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #31bfce;
+    color: white;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.btn-purchase {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.btn-purchase:hover {
+    background-color: #2D9CDB;
+}
+/*Bus Service Details Section Works Done.*/
+
+/*About Section Works:*/
+.about-header {
+    font-weight: bold;
+    text-align: center;
+    font-size: 4.0em;
+}
+.about-text {
+    text-align: left;
+    font-size: 2em;
+    padding-left: 1em;
+    text-shadow: #a59f9f00
+}
+/*About Section Works Done.*/
+

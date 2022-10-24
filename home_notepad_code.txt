@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Company X | Home</title>
+    <link rel="stylesheet" href="Styles.css" />
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="Home.html" target="_blank">Home</a></li>
+                <li><a href="About.html" target="_blank">About</a></li>
+                <li><a href="Get_Started.html" target="_blank">Get Started</a></li>
+            </ul>
+        </nav>
+        
+        <h1 class="company-name company-name-large:">MEC Groups</h1>
+    </header>
+    <section class="main-section container">
+        <h3 class="section-header">PROMOTIONS</h3>
+        <div>
+            <div>
+                <div>
+                    <img class="promotion-image" src="Images/10_Percent_Discount_Promotion.png" width="150" height="150" />
+                </div>
+                <p class="promotion-text">10% Discount Monday to Friday, 7AM to 7PM</p>
+            </div>
+            <div>
+                <div>
+                    <img class="promotion-image" src="Images/50_Percent_Off_Promotion.png" width="150" height="150" />
+                </div>
+                <p class="promotion-text">50% Discount every Saturday and Sunday, 7AM to 11PM</p>
+            </div>
+            <div>
+                <div>
+                    <img class="promotion-image" src="Images/20_Percent_Off_Promotion.png" width="150" height="150" />
+                </div>
+                <p class="promotion-text">Become a member to get 20% Discount Monday to Friday, 7AM to 7PM</p>
+            </div>
+        </div>
+        <!--Promotional Pictures with Texts-->
+    </section>
+    
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="company-name-small">MEC Groups</h3>
+            <ul class="nav footer-nav">
+                <li><a href="Contact.html" target="_blank"><img src="Images/contact_number_logo.png" width="40" height="40" /></a></li>
+
+                <li><a href="https://www.facebook.com/MEC-Groups-103702649016076/?ref=page_internal" target="_blank"><img src="Images/facebook_logo.png" width="40" height="40" /></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

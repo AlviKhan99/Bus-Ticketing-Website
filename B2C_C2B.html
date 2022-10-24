@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>MEC Groups | Bus Service Details</title>
+    <link rel="stylesheet" href="Styles.css" />
+    <script src="service.js" async></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            color: #ffffff
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+        }
+
+        .nav ul {
+            margin: 0;
+        }
+
+        .nav li {
+            display: inline;
+        }
+
+        .nav a {
+            display: inline-block;
+            padding: .5em;
+            color: white;
+            text-decoration: none;
+        }
+
+        .main-nav {
+            text-align: center;
+            font-size: 3em;
+            font-weight: lighter;
+            border-bottom: 1px solid rgba(255, 255, 255, .95)
+        }
+
+            .main-nav li {
+                padding: 0 5%;
+            }
+
+        .nav a:hover {
+            background-color: rgba(255, 255, 255, .3)
+        }
+
+        .main-header {
+            background-image: url("Images/Header Background.jpg");
+            background-blend-mode: multiply;
+            background-size: cover;
+            padding-bottom: 30px;
+        }
+
+        .content-section {
+            margin: 1em;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1.5em;
+        }
+
+        .section-header {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: normal;
+            color: #ffffff;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        .about-band-image {
+            float: left;
+            height: 200px;
+            width: 200px;
+            margin: 15px;
+            border-radius: 50%;
+        }
+
+        .main-footer {
+            color: white;
+            padding: .25em 0;
+        }
+
+        .main-footer-container {
+            border-top: 2px solid rgba(255, 255, 255, .95);
+            display: flex;
+            align-items: center;
+        }
+
+            .main-footer-container ul {
+                flex-grow: 1;
+                text-align: end;
+            }
+
+        .footer-nav li {
+            padding: 0 .5em;
+        }
+
+        .footer-nav img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .btn {
+            text-align: center;
+            vertical-align: middle;
+            padding: .67em .67em;
+            cursor: pointer;
+        }
+
+        .btn-header {
+            margin: .5em 15% 2em 15%;
+            color: white;
+            border: 2px solid #2D9CDB;
+            background-color: rgba(255, 255, 255, .1);
+            border-radius: 0;
+            font-size: 1.5em;
+            font-weight: lighter;
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+
+            .btn-header:hover {
+                background-color: rgba(255, 255, 255, .3);
+            }
+
+
+        .btn-primary {
+            color: white;
+            background-color: #56CCF2;
+            border: none;
+            border-radius: .3em;
+            font-weight: bold;
+        }
+
+            .btn-primary:hover {
+                background-color: #2D9CDB;
+            }
+
+        .shop-item {
+            margin: 30px;
+        }
+
+        .shop-item-title {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .shop-item-image {
+            height: 150px;
+        }
+
+        .shop-item-details {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .shop-item-price {
+            flex-grow: 1;
+            color: #ffffff;
+        }
+
+        .shop-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .cart-header {
+            font-weight: bold;
+            font-size: 1.25em;
+            color: #ffffff;
+        }
+
+        .cart-column {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid rgba(255, 255, 255, .95);
+            margin-right: 1.5em;
+            padding-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .cart-row {
+            display: flex;
+        }
+
+        .cart-item {
+            width: 45%;
+        }
+
+        .cart-price {
+            width: 20%;
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+
+        .cart-quantity {
+            width: 35%;
+        }
+
+        .cart-item-title {
+            color: #ffffff;
+            margin-left: .5em;
+            font-size: 1.2em;
+        }
+
+        .cart-item-image {
+            width: 75px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .btn-danger {
+            color: white;
+            background-color: #EB5757;
+            border: none;
+            border-radius: .3em;
+            font-weight: bold;
+        }
+
+            .btn-danger:hover {
+                background-color: #CC4C4C;
+            }
+
+        .cart-quantity-input {
+            height: 34px;
+            width: 50px;
+            border-radius: 5px;
+            border: 2px solid rgba(255, 255, 255, .95);
+            background-color: #31bfce;
+            color: white;
+            padding: 0;
+            text-align: center;
+            font-size: 1.2em;
+            margin-right: 25px;
+        }
+
+        .cart-row:last-child {
+            border-bottom: 2px solid rgba(255, 255, 255, .95);
+        }
+
+            .cart-row:last-child .cart-column {
+                border: none;
+            }
+
+        .cart-total {
+            text-align: end;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .cart-total-title {
+            font-weight: bold;
+            font-size: 1.5em;
+            color: white;
+            margin-right: 20px;
+        }
+
+        .cart-total-price {
+            color: white;
+            font-size: 1.1em;
+        }
+
+        .btn-purchase {
+            display: block;
+            margin: 40px auto 80px auto;
+            font-size: 1.75em;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="Home.html" target="_blank">Home</a></li>
+                <li><a href="About.html" target="_blank">About</a></li>
+                <li><a href="Get_started.html" target="_blank">Get Started</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="company-name company-name-large:">MEC Groups</h1>
+    </header>
+    <section class="container content-section">
+        <div>
+            <ul>
+                <li class="details-text"><strong>Estimated time to reach destination is 3 hours.</strong></li>
+
+                <li class="details-text"><a href="test.html" target="_blank"><strong>Click here to see current location of the bus.</strong></a></li>
+
+                <li class="details-text"><strong>The price of this bus journey is RM 45.</strong></li>
+
+
+            </ul>
+
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">ITEM:</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <strong class="shop-item-title">Bus Ticket: </strong>
+                <img class="shop-item-image" src="Images\bus_image.png.png">
+                <div class="shop-item-details">
+                    <strong class="shop-item-price">RM45</strong>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <strong class="cart-item cart-header cart-column">ITEM</strong>
+            <strong class="cart-price cart-header cart-column">PRICE</strong>
+            <strong class="cart-quantity cart-header cart-column">QUANTITY</strong>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <strong class="cart-total-price">RM0</strong>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="company-name-small">MEC Groups</h3>
+            <ul class="nav footer-nav">
+                <li><a href="Contact.html" target="_blank"><img src="Images\contact_number_logo.png" width="40" height="40" /></a></li>
+
+                <li><a href="https://www.facebook.com/MEC-Groups-103702649016076/?ref=page_internal" target="_blank"><img src="Images\facebook_logo.png" width="40" height="40" /></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
